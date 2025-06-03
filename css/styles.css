@@ -1,6 +1,6 @@
 body,h1 {font-family: 'Raleway', sans-serif}
 body {
-  background: url(/images/acoustic\ guitar.jpg) no-repeat center center fixed;
+  background: url(images/acoustic\ guitar.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 .login-box {
