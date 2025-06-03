@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Fuente e íconos -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+<title>Log In</title>
+</head>
+<body>
+
+
+    
+<script language="JavaScript">
+function go(){
+    if (document.form.password.value=='12345678' && document.form.login.value=='user'){
+        document.form.submit();
+    } else {
+        alert("Por favor ingrese, nombre de usuario y contraseña correctos.");
+    }
+}
+</script>
+
+
+<div class="w3-container w3-display-middle w3-center w3-animate-opacity" style="max-width:400px">
+    <div class="w3-card-4 login-box">
+      <h1 class="w3-xlarge"><i class="fa fa-guitar"></i> Login</h1>
+      <p class="w3-opacity">Accede a tu cuenta</p>
+      
+      <form name="form" action="index.html" class="w3-container">
+        <p><label><i class="fa fa-user"></i> Usuario:</label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" name="login" required>
+        </p>
+        <p><label><i class="fa fa-lock"></i> Contraseña:</label>
+          <input class="w3-input w3-border w3-margin-bottom" type="password" name="password" required>
+        </p>
+        <button type="button" onclick="go()" class="w3-button w3-teal w3-block w3-margin-top">Acceder</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

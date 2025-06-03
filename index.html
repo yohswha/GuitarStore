@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guitar Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">INICIO</a>
+    <a href="#guitars" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GUITARRAS</a>
+    <a href="#accessories" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACCESORIOS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MÁS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Ofertas</a>
+        <a href="#services" class="w3-bar-item w3-button">Servicios</a>
+        <a href="#blog" class="w3-bar-item w3-button">Blog</a>
+      </div>
+    </div>
+    <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-right">SALIR</a>
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#guitars" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GUITARRAS</a>
+  <a href="#accessories" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ACCESORIOS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTO</a>
+  <a href="#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SERVICIOS</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OFERTAS</a>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/images/slide1.jpg" style="width:100%"> <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Guitarras Eléctricas</h3>
+      <p><b>Descubre la potencia y el sonido inigualable.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/images/slide.jpg" style="width:100%"> <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Guitarras Acústicas</h3>
+      <p><b>La calidez y claridad para cada melodía.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/images/bajo.jpg" style="width:100%"> <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Bajos</h3>
+      <p><b>El ritmo y la base perfecta para tu banda.</b></p>    
+    </div>
+  </div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="guitars">
+    <h2 class="w3-wide">NUESTRAS GUITARRAS</h2>
+    <p class="w3-opacity"><i>Encuentra tu sonido perfecto</i></p>
+    <p class="w3-justify">En Guitarra Shop, nos apasiona la música y te ofrecemos una selección premium de guitarras para todos los estilos y niveles. Desde eléctricas potentes hasta acústicas con alma y bajos con ritmo, cada instrumento es elegido por su calidad y capacidad de inspiración. Creemos que cada músico merece la herramienta adecuada para expresar su arte. Sumérgete en nuestro catálogo y déjate llevar por la pasión de las seis cuerdas. Tenemos opciones para principiantes entusiastas y profesionales exigentes.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Guitarra Eléctrica</p>
+        <img src="/images/electric guitar.jpg" class="w3-round w3-margin-bottom" alt="Guitarra Eléctrica" style="width:60%"> </div>
+        <div class="w3-third">
+        <p>Guitarra Acústica</p>
+        <img src="/images/acoustic guitar.jpg" class="w3-round w3-margin-bottom" alt="Guitarra Acústica" style="width:60%"> 
+        </div>
+      <div class="w3-third">
+        <p>Bajo</p>
+        <img src="/images/bajo small.jpg" class="w3-round" alt="Bajo" style="width:60%"> </div>
+    </div>
+  </div>
+
+  <div class="w3-black" id="accessories">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">ACCESORIOS Y COMPLEMENTOS</h2>
+      <p class="w3-opacity w3-center"><i>Todo lo que necesitas para tu instrumento</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">Cuerdas <span class="w3-tag w3-red w3-margin-left">Top Ventas</span></li>
+        <li class="w3-padding">Púas <span class="w3-tag w3-red w3-margin-left">Novedad</span></li>
+        <li class="w3-padding">Afinadores <span class="w3-badge w3-right w3-margin-right">5</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/images/guitar-strings.png" alt="Cuerdas" style="width:100%" class="w3-hover-opacity"> <div class="w3-container w3-white">
+            <p><b>Juegos de Cuerdas</b></p>
+            <p class="w3-opacity">Variedad para cada tipo</p>
+            <p>Encuentra el juego de cuerdas perfecto para tu guitarra eléctrica, acústica o bajo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('productModal').style.display='block'">Ver Detalles</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/images/puas.jpg" alt="Púas" style="width:100%" class="w3-hover-opacity"> <div class="w3-container w3-white">
+            <p><b>Púas y Capos</b></p>
+            <p class="w3-opacity">Accesorios esenciales</p>
+            <p>Desde púas de distintos grosores hasta capos para un cambio de tono rápido.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('productModal').style.display='block'">Ver Detalles</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/images/Amplifier.png" alt="Amplificadores" style="width:100%" class="w3-hover-opacity"> <div class="w3-container w3-white">
+            <p><b>Amplificadores</b></p>
+            <p class="w3-opacity">Potencia tu sonido</p>
+            <p>Descubre nuestra gama de amplificadores para cualquier estilo y tamaño de escenario.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('productModal').style.display='block'">Ver Detalles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="productModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('productModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-shopping-bag w3-margin-right"></i>Detalles del Producto</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-tag"></i> Precio: $XX.XX</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Cantidad">
+        <p><label><i class="fa fa-user"></i> Tu Email</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Ingresa tu email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">AÑADIR AL CARRITO <i class="fa fa-cart-plus"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('productModal').style.display='none'">Cerrar <i class="fa fa-remove"></i></button>
+        <p class="w3-right">¿Necesitas <a href="#" class="w3-text-blue">ayuda?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACTO</h2>
+    <p class="w3-opacity w3-center"><i>¡Estamos aquí para ayudarte!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Santo Domingo, República Dominicana<br>
+        <i class="fa fa-phone" style="width:30px"></i> Teléfono: +1 849 416 1263<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: yohswhabello@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Servicios -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="services">
+  <h2 class="w3-wide w3-center">SERVICIOS</h2>
+  <p class="w3-opacity w3-center"><i>Todo lo que tu guitarra necesita</i></p>
+  <div class="w3-row-padding w3-padding-32">
+    <div class="w3-third w3-center">
+      <i class="fa fa-music w3-xxlarge w3-margin-bottom w3-text-teal"></i>
+      <p class="w3-large">Clases de Guitarra</p>
+      <p>Aprende con profesionales en clases personalizadas o en grupo para todos los niveles.</p>
+    </div>
+    <div class="w3-third w3-center">
+      <i class="fa fa-wrench w3-xxlarge w3-margin-bottom w3-text-teal"></i>
+      <p class="w3-large">Reparación y Mantenimiento</p>
+      <p>Servicio técnico especializado en ajustes, calibración y reparación de guitarras.</p>
+    </div>
+    <div class="w3-third w3-center">
+      <i class="fa fa-shopping-cart w3-xxlarge w3-margin-bottom w3-text-teal"></i>
+      <p class="w3-large">Venta de Guitarras</p>
+      <p>Encuentra guitarras acústicas, eléctricas y accesorios de las mejores marcas.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Sección de Blog -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="blog">
+  <h2 class="w3-wide w3-center">BLOG</h2>
+  <p class="w3-opacity w3-center"><i>Novedades y consejos para guitarristas</i></p>
+  <div class="w3-row-padding w3-padding-32">
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/images/acoustic guitar.jpg" style="width:100%" alt="guitarra1">
+        <div class="w3-container">
+          <h5><b>¿Cómo elegir tu primera guitarra?</b></h5>
+          <p>Guía rápida para principiantes que buscan su primera guitarra.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90" style="width:100%" alt="guitarra2">
+        <div class="w3-container">
+          <h5><b>Mantenimiento básico</b></h5>
+          <p>Consejos esenciales para mantener tu guitarra en buen estado.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" style="width:100%" alt="guitarra3">
+        <div class="w3-container">
+          <h5><b>Top guitarristas latinos</b></h5>
+          <p>Conoce a los artistas más influyentes del mundo hispano de la guitarra.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Yohswha</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
